@@ -20,10 +20,6 @@ class CcMenutor < Formula
     error_log_path var/"log/cc-menutor.log"
   end
 
-  test do
-    assert_match "All tests passed", shell_output("#{bin}/cc-menutor --test")
-  end
-
   def caveats
     <<~EOS
       cc-menutor is an unofficial tool and is not affiliated with Anthropic.
@@ -31,5 +27,9 @@ class CcMenutor < Formula
         brew services start cc-menutor
       It reads local Claude Code usage data only; nothing is sent over the network.
     EOS
+  end
+
+  test do
+    assert_match "All tests passed", shell_output("#{bin}/cc-menutor --test")
   end
 end
