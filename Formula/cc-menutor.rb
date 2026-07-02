@@ -1,8 +1,8 @@
 class CcMenutor < Formula
   desc "Unofficial macOS menu bar monitor for Claude Code 5-hour block usage"
   homepage "https://github.com/Ahngbeom/cc-menutor"
-  url "https://github.com/Ahngbeom/cc-menutor/archive/refs/tags/v1.2.tar.gz"
-  sha256 "bbcf251a6f8c64b6a94278c3554763d6107a3acfa5e9a4ea5020fe76a2da6858"
+  url "https://github.com/Ahngbeom/cc-menutor/archive/refs/tags/v1.3.tar.gz"
+  sha256 "30ae929069414f2b4106ea9f86246fc160b93ee0b23e5a17fb5416d4cc6b9033"
   license "Apache-2.0"
 
   depends_on macos: :monterey # 12+, swiftc는 CLT/Xcode가 제공
