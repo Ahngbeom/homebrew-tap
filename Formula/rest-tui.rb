@@ -5,21 +5,21 @@
 class RestTui < Formula
   desc "Terminal UI for browsing and running IntelliJ HTTP Client .http scratch files"
   homepage "https://github.com/Ahngbeom/rest-tui"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ahngbeom/rest-tui/releases/download/v0.1.0/rest-tui_0.1.0_darwin_amd64.tar.gz"
-      sha256 "3b6bd16382848b13b307720f4c059237ad06df33c33bcc60c44fa28629f61c29"
+      url "https://github.com/Ahngbeom/rest-tui/releases/download/v0.2.0/rest-tui_0.2.0_darwin_amd64.tar.gz"
+      sha256 "a52ca5eef761c8a3fb10c0d85feb1b7b66fdd08f795de54783a6ec622270c45b"
 
       define_method(:install) do
         bin.install "rest-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ahngbeom/rest-tui/releases/download/v0.1.0/rest-tui_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a9cbec0e328434e18a195bc337a95eb6edc31d71ce33188667d5c2629d10044d"
+      url "https://github.com/Ahngbeom/rest-tui/releases/download/v0.2.0/rest-tui_0.2.0_darwin_arm64.tar.gz"
+      sha256 "79b27a57f9ee2a4326e17e73dc2e1b3868172bb3dafc534c19836c9a8c50b764"
 
       define_method(:install) do
         bin.install "rest-tui"
@@ -29,15 +29,15 @@ class RestTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ahngbeom/rest-tui/releases/download/v0.1.0/rest-tui_0.1.0_linux_amd64.tar.gz"
-      sha256 "f5c3dc8850146beeb5b9a862e424d832b1508dd154c610416b17bed54f0b7452"
+      url "https://github.com/Ahngbeom/rest-tui/releases/download/v0.2.0/rest-tui_0.2.0_linux_amd64.tar.gz"
+      sha256 "c48793ee2d82807ecb7436a1c4afc138b0b1d688f11d662a3c71c249cb7e8bfd"
       define_method(:install) do
         bin.install "rest-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ahngbeom/rest-tui/releases/download/v0.1.0/rest-tui_0.1.0_linux_arm64.tar.gz"
-      sha256 "97045a411ec4e6d68a8b35e2dd18a3cbabaef161e9df9489c5403c9dff3cc248"
+      url "https://github.com/Ahngbeom/rest-tui/releases/download/v0.2.0/rest-tui_0.2.0_linux_arm64.tar.gz"
+      sha256 "c37b2bfc65347683241f6d86e12d428069157df41562d7aaa0fa8695571ba03c"
       define_method(:install) do
         bin.install "rest-tui"
       end
