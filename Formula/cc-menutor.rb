@@ -25,7 +25,8 @@ class CcMenutor < Formula
       cc-menutor is an unofficial tool and is not affiliated with Anthropic.
       Start it (and enable auto-start at login) with:
         brew services start cc-menutor
-      It reads local Claude Code usage data only; nothing is sent over the network.
+      It reads local Claude Code usage data only. The one outbound request is an
+      opt-in exchange-rate lookup, made only when the display currency is set to KRW.
     EOS
   end
 
